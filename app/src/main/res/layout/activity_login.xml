@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/loginbcakground"
+    android:orientation="vertical"
+    tools:context=".services.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人空间"
+        android:textSize="25sp"
+        android:textColor="#333333" />
+
+
+
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入用户名"
+
+        />
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:hint="请输入密码"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/login_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"/>
+
+        <Button
+            android:id="@+id/login_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
