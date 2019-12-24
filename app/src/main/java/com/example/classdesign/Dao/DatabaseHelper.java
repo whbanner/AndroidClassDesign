@@ -15,6 +15,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
         //创建数据库sql语句 并 执行
+        //两个属性 先创一个ContentValues 之后给相应 K，V赋值即可
         String sql = "create table login(username varchar(20),password varchar(20))";
         db.execSQL(sql);
         ContentValues values = new ContentValues();
