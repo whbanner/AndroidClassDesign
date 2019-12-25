@@ -6,6 +6,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
+/**
+ * 使用数据库必须继承SQLiteOpenHelper这个类
+ */
 public class DatabaseHelper extends SQLiteOpenHelper{
     private static final String DATABASE_NAME="ClassDesign_db";
     //带全部参数的构造函数，此构造函数必不可少
